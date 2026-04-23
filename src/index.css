@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "Plus Jakarta Sans Regular";
+  src: url("./assets/fonts/PlusJakartaSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Plus Jakarta Sans Medium";
+  src: url("./assets/fonts/PlusJakartaSans-Medium.ttf");
+}
+@font-face {
+  font-family: "Plus Jakarta Sans Semibold";
+  src: url("./assets/fonts/PlusJakartaSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Plus Jakarta Sans Bold";
+  src: url("./assets/fonts/PlusJakartaSans-Bold.ttf");
+}
+
+:root {
+  --th-page: #f9fafb;
+  --th-surface: #ffffff;
+  --th-heading: #1f2937;
+  --th-body: #374151;
+  --th-secondary: #4b5563;
+  --th-muted: #6b7280;
+  --th-subtle: #9ca3af;
+  --th-border: #e5e7eb;
+}
+
+.dark {
+  --th-page: #111827;
+  --th-surface: #1f2937;
+  --th-heading: #f3f4f6;
+  --th-body: #e5e7eb;
+  --th-secondary: #d1d5db;
+  --th-muted: #9ca3af;
+  --th-subtle: #6b7280;
+  --th-border: #374151;
+}
+
+@theme {
+  --color-primary-50: #f4f2ff;
+  --color-primary-100: #e9e8ff;
+  --color-primary-200: #d6d4ff;
+  --color-primary-300: #b9b1ff;
+  --color-primary-400: #9685ff;
+  --color-primary-500: #8669ff;
+  --color-primary-600: #6330f7;
+  --color-primary-700: #551ee3;
+  --color-primary-800: #4618bf;
+  --color-primary-900: #3b169c;
+  --color-primary-950: #220b6a;
+
+  --color-primary-light: var(--color-primary-500);
+  --color-primary: var(--color-primary-600);
+  --color-secondary: var(--color-primary-800);
+
+  --color-page: var(--th-page);
+  --color-surface: var(--th-surface);
+  --color-heading: var(--th-heading);
+  --color-body: var(--th-body);
+  --color-secondary-text: var(--th-secondary);
+  --color-muted: var(--th-muted);
+  --color-subtle: var(--th-subtle);
+  --color-border: var(--th-border);
+
+  --font-body: "Plus Jakarta Sans Regular";
+  --font-body-medium: "Plus Jakarta Sans Medium";
+  --font-body-semibold: "Plus Jakarta Sans Semibold";
+  --font-body-bold: "Plus Jakarta Sans Bold";
+
+  --text-exs: 0.65rem;
+}
+
+/* Scroll animations */
+.animate-fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.animate-fade-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Plus Jakarta Sans Regular", sans-serif;
+  color: var(--th-body);
+  background: var(--th-page);
+}
