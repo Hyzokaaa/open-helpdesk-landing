@@ -1,18 +1,35 @@
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useCallback } from "react";
 import useTranslation from "../../i18n/useTranslation";
 import { CONFIG } from "../../config";
 import Container from "../ui/Container";
-import { GitHubIcon, XIcon } from "../icons/SocialIcons";
+import { GitHubIcon } from "../icons/SocialIcons";
+
+type FooterLink = { label: string; href?: string; to?: string; hash?: string };
 
 export default function Footer() {
   const { t } = useTranslation();
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  const columns = [
+  const handleHashClick = useCallback(
+    (e: React.MouseEvent<HTMLAnchorElement>, hash: string) => {
+      e.preventDefault();
+      if (location.pathname !== "/") {
+        navigate("/" + hash);
+      } else {
+        document.querySelector(hash)?.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+    [location.pathname, navigate],
+  );
+
+  const columns: { title: string; links: FooterLink[] }[] = [
     {
       title: t("footer.product"),
       links: [
-        { label: t("footer.features"), href: "#features" },
-        { label: t("footer.pricing"), href: "#pricing" },
-        { label: t("footer.changelog"), href: "#" },
+        { label: t("footer.features"), hash: "#features" },
+        { label: t("footer.pricing"), hash: "#pricing" },
       ],
     },
     {
@@ -20,29 +37,26 @@ export default function Footer() {
       links: [
         { label: t("footer.docs"), href: CONFIG.DOCS_URL },
         { label: t("footer.github"), href: CONFIG.GITHUB_URL },
-        { label: t("footer.community"), href: "#" },
       ],
     },
     {
       title: t("footer.company"),
       links: [
-        { label: t("footer.about"), href: "#" },
-        { label: t("footer.blog"), href: "#" },
         { label: t("footer.contact"), href: `mailto:${CONFIG.CONTACT_EMAIL}` },
       ],
     },
     {
       title: t("footer.legal"),
       links: [
-        { label: t("footer.privacy"), href: "#" },
-        { label: t("footer.terms"), href: "#" },
-        { label: t("footer.license"), href: "#" },
+        { label: t("footer.privacy"), to: "/privacy" },
+        { label: t("footer.terms"), to: "/terms" },
+        { label: t("footer.license"), href: `${CONFIG.GITHUB_URL}/blob/main/LICENSE` },
       ],
     },
   ];
 
   return (
-    <footer className="bg-gray-900">
+    <footer className="bg-primary-950">
       <Container className="py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           {columns.map((col) => (
@@ -51,9 +65,27 @@ export default function Footer() {
               <ul className="flex flex-col gap-2.5">
                 {col.links.map((link) => (
                   <li key={link.label}>
-                    <a href={link.href} className="text-sm text-gray-400 hover:text-white transition-colors">
-                      {link.label}
-                    </a>
+                    {link.to ? (
+                      <Link to={link.to} className="text-sm text-gray-400 hover:text-white transition-colors">
+                        {link.label}
+                      </Link>
+                    ) : link.hash ? (
+                      <a
+                        href={link.hash}
+                        onClick={(e) => handleHashClick(e, link.hash!)}
+                        className="text-sm text-gray-400 hover:text-white transition-colors"
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <a
+                        href={link.href ?? "#"}
+                        className="text-sm text-gray-400 hover:text-white transition-colors"
+                        {...(link.href?.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                      >
+                        {link.label}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -61,7 +93,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-gray-800">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-white/10">
           <div className="flex items-center gap-2.5">
             <img src="/logo.svg" alt={CONFIG.PRODUCT_NAME} className="w-6 h-6" />
             <span className="text-sm text-gray-500">
@@ -71,9 +103,6 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <a href={CONFIG.GITHUB_URL} className="text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
               <GitHubIcon />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">
-              <XIcon />
             </a>
           </div>
         </div>

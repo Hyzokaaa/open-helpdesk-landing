@@ -2,8 +2,8 @@ export const CONFIG = {
   PRODUCT_NAME: "Open Helpdesk",
   GITHUB_URL: "https://github.com/Hyzokaaa/open-helpdesk",
   GITHUB_CLIENT_URL: "https://github.com/Hyzokaaa/open-helpdesk-client",
-  APP_URL: "#",
-  DOCS_URL: "#",
-  CONTACT_EMAIL: "hello@openhelpdesk.com",
+  APP_URL: "https://app.openhelpdesk.dev",
+  DOCS_URL: "https://docs.openhelpdesk.dev",
+  CONTACT_EMAIL: "hello@openhelpdesk.dev",
   GITHUB_STARS: "0",
 };

@@ -215,6 +215,95 @@ const translations = {
   "popular": { en: "Popular", es: "Popular" },
   "mostPopular": { en: "Most Popular", es: "Más Popular" },
   "custom": { en: "Custom", es: "A medida" },
+
+  // Privacy Policy
+  "privacy.title": { en: "Privacy Policy", es: "Política de Privacidad" },
+  "privacy.lastUpdated": { en: "Last updated: April 2026", es: "Última actualización: Abril 2026" },
+  "privacy.intro": {
+    en: "Open Helpdesk (\"we\", \"us\", \"our\") operates the openhelpdesk.dev website and the Open Helpdesk cloud platform. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our service.",
+    es: "Open Helpdesk (\"nosotros\") opera el sitio web openhelpdesk.dev y la plataforma cloud Open Helpdesk. Esta página le informa sobre nuestras políticas con respecto a la recopilación, uso y divulgación de datos personales cuando utiliza nuestro servicio.",
+  },
+  "privacy.collect.title": { en: "Information We Collect", es: "Información que Recopilamos" },
+  "privacy.collect.desc": {
+    en: "When you create an account, we collect your name, email address, and password (stored hashed). When you use the platform, we collect ticket data, comments, attachments, and usage metadata necessary to provide the service.",
+    es: "Cuando crea una cuenta, recopilamos su nombre, dirección de email y contraseña (almacenada hasheada). Cuando usa la plataforma, recopilamos datos de tickets, comentarios, adjuntos y metadatos de uso necesarios para proveer el servicio.",
+  },
+  "privacy.use.title": { en: "How We Use Your Data", es: "Cómo Usamos sus Datos" },
+  "privacy.use.desc": {
+    en: "We use your data solely to provide and improve the Open Helpdesk service. We do not sell, rent, or share your personal data with third parties for marketing purposes. Data is used for: account management, service delivery, email notifications you opted into, and aggregate analytics.",
+    es: "Usamos sus datos únicamente para proveer y mejorar el servicio Open Helpdesk. No vendemos, alquilamos ni compartimos sus datos personales con terceros para fines de marketing. Los datos se usan para: gestión de cuenta, prestación del servicio, notificaciones por email que aceptó, y analíticas agregadas.",
+  },
+  "privacy.storage.title": { en: "Data Storage & Security", es: "Almacenamiento y Seguridad" },
+  "privacy.storage.desc": {
+    en: "Your data is stored on secure servers with encryption at rest and in transit. We use industry-standard security practices including role-based access control, regular backups, and security audits. Self-hosted users maintain full control over their own data.",
+    es: "Sus datos se almacenan en servidores seguros con encriptación en reposo y en tránsito. Usamos prácticas de seguridad estándar de la industria incluyendo control de acceso basado en roles, respaldos regulares y auditorías de seguridad. Los usuarios self-hosted mantienen control total sobre sus propios datos.",
+  },
+  "privacy.rights.title": { en: "Your Rights", es: "Sus Derechos" },
+  "privacy.rights.desc": {
+    en: "You have the right to access, correct, or delete your personal data at any time. You can export your data or request account deletion by contacting us. Upon deletion, all your data is permanently removed from our systems within 30 days.",
+    es: "Tiene derecho a acceder, corregir o eliminar sus datos personales en cualquier momento. Puede exportar sus datos o solicitar la eliminación de su cuenta contactándonos. Tras la eliminación, todos sus datos se borran permanentemente de nuestros sistemas en un plazo de 30 días.",
+  },
+  "privacy.cookies.title": { en: "Cookies", es: "Cookies" },
+  "privacy.cookies.desc": {
+    en: "We use essential cookies only for authentication and language preferences. We do not use tracking cookies or third-party analytics. No data is shared with advertisers.",
+    es: "Usamos cookies esenciales solo para autenticación y preferencias de idioma. No usamos cookies de seguimiento ni analíticas de terceros. No se comparten datos con anunciantes.",
+  },
+  "privacy.contact.title": { en: "Contact", es: "Contacto" },
+  "privacy.contact.desc": {
+    en: "If you have any questions about this Privacy Policy, please contact us at",
+    es: "Si tiene alguna pregunta sobre esta Política de Privacidad, contáctenos en",
+  },
+
+  // Terms of Service
+  "terms.title": { en: "Terms of Service", es: "Términos de Servicio" },
+  "terms.lastUpdated": { en: "Last updated: April 2026", es: "Última actualización: Abril 2026" },
+  "terms.intro": {
+    en: "These Terms of Service govern your use of the Open Helpdesk platform and website operated by Open Helpdesk. By accessing or using our service, you agree to be bound by these terms.",
+    es: "Estos Términos de Servicio rigen el uso de la plataforma y sitio web Open Helpdesk operado por Open Helpdesk. Al acceder o usar nuestro servicio, acepta estar sujeto a estos términos.",
+  },
+  "terms.service.title": { en: "The Service", es: "El Servicio" },
+  "terms.service.desc": {
+    en: "Open Helpdesk provides a helpdesk and ticket management platform available as a cloud-hosted service or self-hosted deployment. We reserve the right to modify, suspend, or discontinue any part of the service with reasonable notice.",
+    es: "Open Helpdesk proporciona una plataforma de helpdesk y gestión de tickets disponible como servicio cloud o despliegue self-hosted. Nos reservamos el derecho de modificar, suspender o discontinuar cualquier parte del servicio con aviso razonable.",
+  },
+  "terms.accounts.title": { en: "Accounts", es: "Cuentas" },
+  "terms.accounts.desc": {
+    en: "You are responsible for maintaining the security of your account and password. You must be at least 16 years old to use the service. You are responsible for all activity that occurs under your account.",
+    es: "Es responsable de mantener la seguridad de su cuenta y contraseña. Debe tener al menos 16 años para usar el servicio. Es responsable de toda actividad que ocurra bajo su cuenta.",
+  },
+  "terms.payment.title": { en: "Payment & Plans", es: "Pagos y Planes" },
+  "terms.payment.desc": {
+    en: "Paid plans are billed monthly or yearly in advance. You may upgrade or downgrade at any time. Downgrade changes take effect at the end of the current billing period. Refunds are handled on a case-by-case basis.",
+    es: "Los planes de pago se facturan mensual o anualmente por adelantado. Puede actualizar o bajar de plan en cualquier momento. Los cambios de bajada toman efecto al final del período de facturación actual. Los reembolsos se manejan caso por caso.",
+  },
+  "terms.content.title": { en: "Your Content", es: "Su Contenido" },
+  "terms.content.desc": {
+    en: "You retain all rights to the data you upload to Open Helpdesk. We do not claim ownership of your content. You grant us a limited license to store, process, and display your content solely to provide the service.",
+    es: "Retiene todos los derechos sobre los datos que sube a Open Helpdesk. No reclamamos propiedad sobre su contenido. Nos otorga una licencia limitada para almacenar, procesar y mostrar su contenido únicamente para proveer el servicio.",
+  },
+  "terms.acceptable.title": { en: "Acceptable Use", es: "Uso Aceptable" },
+  "terms.acceptable.desc": {
+    en: "You agree not to use the service for any unlawful purpose, to abuse or harass others, to transmit malware, or to attempt to gain unauthorized access to other systems. We reserve the right to terminate accounts that violate these terms.",
+    es: "Acepta no usar el servicio para fines ilegales, abusar o acosar a otros, transmitir malware, o intentar obtener acceso no autorizado a otros sistemas. Nos reservamos el derecho de terminar cuentas que violen estos términos.",
+  },
+  "terms.liability.title": { en: "Limitation of Liability", es: "Limitación de Responsabilidad" },
+  "terms.liability.desc": {
+    en: "The service is provided \"as is\" without warranties of any kind. To the maximum extent permitted by law, Open Helpdesk shall not be liable for any indirect, incidental, or consequential damages arising from the use of the service.",
+    es: "El servicio se proporciona \"tal cual\" sin garantías de ningún tipo. En la máxima medida permitida por la ley, Open Helpdesk no será responsable por daños indirectos, incidentales o consecuentes derivados del uso del servicio.",
+  },
+  "terms.changes.title": { en: "Changes to Terms", es: "Cambios a los Términos" },
+  "terms.changes.desc": {
+    en: "We may update these terms from time to time. We will notify registered users of significant changes via email. Continued use of the service after changes constitutes acceptance of the new terms.",
+    es: "Podemos actualizar estos términos periódicamente. Notificaremos a usuarios registrados sobre cambios significativos por email. El uso continuado del servicio después de los cambios constituye la aceptación de los nuevos términos.",
+  },
+  "terms.contact.title": { en: "Contact", es: "Contacto" },
+  "terms.contact.desc": {
+    en: "If you have any questions about these Terms of Service, please contact us at",
+    es: "Si tiene alguna pregunta sobre estos Términos de Servicio, contáctenos en",
+  },
+
+  // Legal pages shared
+  "legal.backToHome": { en: "Back to home", es: "Volver al inicio" },
 } as const;
 
 export type TranslationKey = keyof typeof translations;

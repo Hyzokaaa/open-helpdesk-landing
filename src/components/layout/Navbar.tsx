@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import clsx from "clsx";
 import useTranslation from "../../i18n/useTranslation";
 import { CONFIG } from "../../config";
@@ -9,12 +10,26 @@ export default function Navbar() {
   const { t, lang, toggleLang } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handler, { passive: true });
     return () => window.removeEventListener("scroll", handler);
   }, []);
+
+  const handleAnchorClick = useCallback(
+    (e: React.MouseEvent<HTMLAnchorElement>, hash: string) => {
+      e.preventDefault();
+      if (location.pathname !== "/") {
+        navigate("/" + hash);
+      } else {
+        document.querySelector(hash)?.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+    [location.pathname, navigate],
+  );
 
   const links: { label: string; href: string }[] = [
     { label: t("nav.features"), href: "#features" },
@@ -34,10 +49,10 @@ export default function Navbar() {
     >
       <Container className="flex items-center justify-between h-16">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2.5">
+        <Link to="/" className="flex items-center gap-2.5">
           <img src="/logo.svg" alt={CONFIG.PRODUCT_NAME} className="w-8 h-8" />
           <span className="font-body-bold text-heading text-lg">{CONFIG.PRODUCT_NAME}</span>
-        </a>
+        </Link>
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
@@ -45,6 +60,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
+              onClick={(e) => handleAnchorClick(e, link.href)}
               className="text-sm text-secondary-text hover:text-primary transition-colors font-body-medium"
             >
               {link.label}
@@ -87,7 +103,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              onClick={() => setMenuOpen(false)}
+              onClick={(e) => { handleAnchorClick(e, link.href); setMenuOpen(false); }}
               className="text-sm text-secondary-text hover:text-primary font-body-medium"
             >
               {link.label}

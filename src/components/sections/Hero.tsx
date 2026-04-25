@@ -45,7 +45,7 @@ export default function Hero() {
               </div>
               <div className="flex-1 mx-4">
                 <div className="bg-surface border border-border rounded-lg px-3 py-1 text-xs text-muted text-center">
-                  app.openhelpdesk.com
+                  app.openhelpdesk.dev
                 </div>
               </div>
             </div>
