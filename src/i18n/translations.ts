@@ -94,7 +94,7 @@ const translations = {
   "pricing.free.cta": { en: "Get Started", es: "Comenzar" },
   "pricing.free.f1": { en: "Up to 2 agents", es: "Hasta 2 agentes" },
   "pricing.free.f2": { en: "1 workspace", es: "1 workspace" },
-  "pricing.free.f3": { en: "50 tickets/month", es: "50 tickets/mes" },
+  "pricing.free.f3": { en: "Unlimited tickets", es: "Tickets ilimitados" },
   "pricing.free.f4": { en: "Community support", es: "Soporte comunitario" },
 
   "pricing.starter.name": { en: "Starter", es: "Starter" },
@@ -102,7 +102,7 @@ const translations = {
   "pricing.starter.cta": { en: "Coming Soon", es: "Próximamente" },
   "pricing.starter.f1": { en: "Up to 5 agents", es: "Hasta 5 agentes" },
   "pricing.starter.f2": { en: "3 workspaces", es: "3 workspaces" },
-  "pricing.starter.f3": { en: "500 tickets/month", es: "500 tickets/mes" },
+  "pricing.starter.f3": { en: "Unlimited tickets", es: "Tickets ilimitados" },
   "pricing.starter.f4": { en: "Email support", es: "Soporte por email" },
 
   "pricing.business.name": { en: "Business", es: "Negocio" },
