@@ -19,20 +19,27 @@ export default function Pricing() {
       features: [t("pricing.free.f1"), t("pricing.free.f2"), t("pricing.free.f3"), t("pricing.free.f4")],
     },
     {
-      name: t("pricing.team.name"),
-      description: t("pricing.team.desc"),
-      monthly: 19,
-      cta: t("pricing.team.cta"),
-      highlighted: true,
-      badge: t("mostPopular"),
-      features: [t("pricing.team.f1"), t("pricing.team.f2"), t("pricing.team.f3"), t("pricing.team.f4")],
+      name: t("pricing.starter.name"),
+      description: t("pricing.starter.desc"),
+      monthly: 9,
+      cta: t("pricing.starter.cta"),
+      features: [t("pricing.starter.f1"), t("pricing.starter.f2"), t("pricing.starter.f3"), t("pricing.starter.f4")],
     },
     {
       name: t("pricing.business.name"),
       description: t("pricing.business.desc"),
-      monthly: 49,
+      monthly: 29,
       cta: t("pricing.business.cta"),
-      features: [t("pricing.business.f1"), t("pricing.business.f2"), t("pricing.business.f3"), t("pricing.business.f4"), t("pricing.business.f5")],
+      highlighted: true,
+      badge: t("mostPopular"),
+      features: [t("pricing.business.f1"), t("pricing.business.f2"), t("pricing.business.f3"), t("pricing.business.f4")],
+    },
+    {
+      name: t("pricing.scale.name"),
+      description: t("pricing.scale.desc"),
+      monthly: 79,
+      cta: t("pricing.scale.cta"),
+      features: [t("pricing.scale.f1"), t("pricing.scale.f2"), t("pricing.scale.f3"), t("pricing.scale.f4")],
     },
     {
       name: t("pricing.enterprise.name"),
@@ -69,7 +76,7 @@ export default function Pricing() {
           />
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
           {tiers.map((tier) => (
             <PricingCard
               key={tier.name}
