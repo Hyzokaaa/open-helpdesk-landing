@@ -1,4 +1,5 @@
 import { useState } from "react";
+import clsx from "clsx";
 import useTranslation from "../../i18n/useTranslation";
 import Container from "../ui/Container";
 import SectionHeading from "../ui/SectionHeading";
@@ -66,14 +67,19 @@ export default function Pricing() {
       <Container>
         <SectionHeading title={t("pricing.heading")} subtitle={t("pricing.subheading")} />
 
-        <div className="flex justify-center mb-12">
+        <div className="flex flex-col items-center gap-1.5 mb-6">
           <Toggle
             left={t("pricing.monthly")}
             right={t("pricing.yearly")}
             active={billing}
             onChange={setBilling}
-            badge={billing === "right" ? t("pricing.yearlyDiscount") : undefined}
           />
+          <span className={clsx(
+            "text-xs font-body-semibold text-primary bg-primary-100 px-2.5 py-1 rounded-full transition-opacity duration-300",
+            billing === "right" ? "opacity-100" : "opacity-0",
+          )}>
+            {t("pricing.yearlyDiscount")}
+          </span>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">

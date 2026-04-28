@@ -33,17 +33,17 @@ export default function PricingCard({
       )}
     >
       {badge && (
-        <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+        <div className="absolute -top-3 left-0 right-0 flex justify-center">
           <Badge>{badge}</Badge>
         </div>
       )}
 
-      <div className="mb-6">
+      <div className="mb-1 text-center">
         <h3 className="text-heading font-body-bold text-xl">{name}</h3>
-        <p className="text-muted text-sm mt-1">{description}</p>
+        <p className="text-muted text-sm mt-1 min-h-[60px]">{description}</p>
       </div>
 
-      <div className="mb-6">
+      <div className="mb-6 text-center h-12 flex items-center justify-center">
         <span className="text-heading font-body-bold text-4xl">{price}</span>
         {period && <span className="text-muted text-sm ml-1">{period}</span>}
       </div>

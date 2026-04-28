@@ -7,7 +7,10 @@ const translations = {
   "nav.getStarted": { en: "Get Started", es: "Comenzar" },
 
   // Hero
-  "hero.headline": { en: "Complete without being complex", es: "Completo sin ser complejo" },
+  "hero.headline": {
+    en: "Complete without being complex",
+    es: "Completo sin ser complejo",
+  },
   "hero.subheadline": {
     en: "The open-source helpdesk that has everything you need and nothing you don't.",
     es: "El helpdesk open-source que tiene todo lo que necesitas y nada que no.",
@@ -19,10 +22,16 @@ const translations = {
   "social.openSource": { en: "Open Source", es: "Código Abierto" },
   "social.license": { en: "AGPL-3.0", es: "AGPL-3.0" },
   "social.stars": { en: "GitHub Stars", es: "Estrellas en GitHub" },
-  "social.teams": { en: "Used by growing teams", es: "Usado por equipos en crecimiento" },
+  "social.teams": {
+    en: "Used by growing teams",
+    es: "Usado por equipos en crecimiento",
+  },
 
   // Features
-  "features.heading": { en: "Everything you need. Nothing you don't.", es: "Todo lo que necesitas. Nada que no." },
+  "features.heading": {
+    en: "Everything you need. Nothing you don't.",
+    es: "Todo lo que necesitas. Nada que no.",
+  },
   "features.subheading": {
     en: "Built for modern support teams who value simplicity and power.",
     es: "Creado para equipos de soporte modernos que valoran simplicidad y poder.",
@@ -42,12 +51,18 @@ const translations = {
     en: "Tag teammates in comments to keep conversations focused and people in the loop.",
     es: "Etiqueta compañeros en comentarios para mantener las conversaciones enfocadas.",
   },
-  "features.email.title": { en: "Email Notifications", es: "Notificaciones por Email" },
+  "features.email.title": {
+    en: "Email Notifications",
+    es: "Notificaciones por Email",
+  },
   "features.email.desc": {
     en: "Automatic email alerts for assignments, mentions, and status changes.",
     es: "Alertas automáticas por email para asignaciones, menciones y cambios de estado.",
   },
-  "features.i18n.title": { en: "Internationalization", es: "Internacionalización" },
+  "features.i18n.title": {
+    en: "Internationalization",
+    es: "Internacionalización",
+  },
   "features.i18n.desc": {
     en: "Full English and Spanish support out of the box. Add more languages easily.",
     es: "Soporte completo en inglés y español incluido. Agrega más idiomas fácilmente.",
@@ -78,7 +93,10 @@ const translations = {
   "showcase.darkTheme": { en: "Dark", es: "Oscuro" },
 
   // Pricing
-  "pricing.heading": { en: "Simple, transparent pricing", es: "Precios simples y transparentes" },
+  "pricing.heading": {
+    en: "Simple, transparent pricing",
+    es: "Precios simples y transparentes",
+  },
   "pricing.subheading": {
     en: "Start free, scale as you grow. No hidden fees.",
     es: "Comienza gratis, escala a medida que creces. Sin costos ocultos.",
@@ -90,7 +108,10 @@ const translations = {
   "pricing.perYear": { en: "/yr", es: "/año" },
 
   "pricing.free.name": { en: "Free", es: "Gratis" },
-  "pricing.free.desc": { en: "For individuals and small projects", es: "Para individuos y proyectos pequeños" },
+  "pricing.free.desc": {
+    en: "For individuals and small projects",
+    es: "Para proyectos personales",
+  },
   "pricing.free.cta": { en: "Get Started", es: "Comenzar" },
   "pricing.free.f1": { en: "Up to 2 agents", es: "Hasta 2 agentes" },
   "pricing.free.f2": { en: "1 workspace", es: "1 workspace" },
@@ -98,7 +119,10 @@ const translations = {
   "pricing.free.f4": { en: "Community support", es: "Soporte comunitario" },
 
   "pricing.starter.name": { en: "Starter", es: "Starter" },
-  "pricing.starter.desc": { en: "For small teams getting started", es: "Para equipos pequeños que comienzan" },
+  "pricing.starter.desc": {
+    en: "For small teams getting started",
+    es: "Para equipos que inician",
+  },
   "pricing.starter.cta": { en: "Coming Soon", es: "Próximamente" },
   "pricing.starter.f1": { en: "Up to 5 agents", es: "Hasta 5 agentes" },
   "pricing.starter.f2": { en: "3 workspaces", es: "3 workspaces" },
@@ -106,7 +130,10 @@ const translations = {
   "pricing.starter.f4": { en: "Email support", es: "Soporte por email" },
 
   "pricing.business.name": { en: "Business", es: "Negocio" },
-  "pricing.business.desc": { en: "For growing teams", es: "Para equipos en crecimiento" },
+  "pricing.business.desc": {
+    en: "For growing teams",
+    es: "Para equipos en crecimiento",
+  },
   "pricing.business.cta": { en: "Coming Soon", es: "Próximamente" },
   "pricing.business.f1": { en: "Up to 15 agents", es: "Hasta 15 agentes" },
   "pricing.business.f2": { en: "10 workspaces", es: "10 workspaces" },
@@ -114,17 +141,29 @@ const translations = {
   "pricing.business.f4": { en: "Priority support", es: "Soporte prioritario" },
 
   "pricing.scale.name": { en: "Scale", es: "Scale" },
-  "pricing.scale.desc": { en: "For scaling organizations", es: "Para organizaciones en crecimiento" },
+  "pricing.scale.desc": {
+    en: "For scaling organizations",
+    es: "Para grandes organizaciones",
+  },
   "pricing.scale.cta": { en: "Coming Soon", es: "Próximamente" },
   "pricing.scale.f1": { en: "Up to 50 agents", es: "Hasta 50 agentes" },
-  "pricing.scale.f2": { en: "Unlimited workspaces", es: "Workspaces ilimitados" },
+  "pricing.scale.f2": {
+    en: "Unlimited workspaces",
+    es: "Workspaces ilimitados",
+  },
   "pricing.scale.f3": { en: "Unlimited tickets", es: "Tickets ilimitados" },
   "pricing.scale.f4": { en: "Dedicated support", es: "Soporte dedicado" },
 
   "pricing.enterprise.name": { en: "Enterprise", es: "Empresarial" },
-  "pricing.enterprise.desc": { en: "For large organizations", es: "Para grandes organizaciones" },
+  "pricing.enterprise.desc": {
+    en: "For large organizations",
+    es: "Para grandes empresas",
+  },
   "pricing.enterprise.cta": { en: "Contact Us", es: "Contáctanos" },
-  "pricing.enterprise.f1": { en: "Everything in Scale", es: "Todo lo de Scale" },
+  "pricing.enterprise.f1": {
+    en: "Everything in Scale",
+    es: "Todo lo de Scale",
+  },
   "pricing.enterprise.f2": { en: "SSO / SAML", es: "SSO / SAML" },
   "pricing.enterprise.f3": { en: "Audit logs", es: "Registros de auditoría" },
   "pricing.enterprise.f4": { en: "Custom roles", es: "Roles personalizados" },
@@ -141,7 +180,10 @@ const translations = {
     en: "Your freedom to use, modify, and distribute is guaranteed. The code stays open forever.",
     es: "Tu libertad de usar, modificar y distribuir está garantizada. El código permanece abierto para siempre.",
   },
-  "oss.selfHost.title": { en: "Self-host in minutes", es: "Auto-hospeda en minutos" },
+  "oss.selfHost.title": {
+    en: "Self-host in minutes",
+    es: "Auto-hospeda en minutos",
+  },
   "oss.selfHost.desc": {
     en: "One command to run. Docker Compose handles the rest. Your data, your servers.",
     es: "Un comando para correr. Docker Compose se encarga del resto. Tus datos, tus servidores.",
@@ -154,12 +196,18 @@ const translations = {
   "oss.starOnGithub": { en: "Star on GitHub", es: "Dar estrella en GitHub" },
 
   // FAQ
-  "faq.heading": { en: "Frequently asked questions", es: "Preguntas frecuentes" },
+  "faq.heading": {
+    en: "Frequently asked questions",
+    es: "Preguntas frecuentes",
+  },
   "faq.subheading": {
     en: "Everything you need to know about Open Helpdesk.",
     es: "Todo lo que necesitas saber sobre Open Helpdesk.",
   },
-  "faq.q1": { en: "Is Open Helpdesk really free?", es: "Es Open Helpdesk realmente gratis?" },
+  "faq.q1": {
+    en: "Is Open Helpdesk really free?",
+    es: "Es Open Helpdesk realmente gratis?",
+  },
   "faq.a1": {
     en: "Yes! The core product is free and open-source under AGPL-3.0. You can self-host it at no cost. We offer paid cloud plans for teams who want managed hosting and premium support.",
     es: "Sí! El producto principal es gratuito y open-source bajo AGPL-3.0. Puedes auto-hospedarlo sin costo. Ofrecemos planes cloud de pago para equipos que quieran hosting administrado y soporte premium.",
@@ -169,17 +217,26 @@ const translations = {
     en: "Absolutely. We provide Docker images and a docker-compose file that gets you running in under 5 minutes. Deploy on any VPS, Kubernetes cluster, or bare metal server.",
     es: "Absolutamente. Proveemos imágenes Docker y un archivo docker-compose que te permite correr en menos de 5 minutos. Despliega en cualquier VPS, cluster de Kubernetes o servidor bare metal.",
   },
-  "faq.q3": { en: "How does it compare to Zendesk?", es: "Cómo se compara con Zendesk?" },
+  "faq.q3": {
+    en: "How does it compare to Zendesk?",
+    es: "Cómo se compara con Zendesk?",
+  },
   "faq.a3": {
     en: "Open Helpdesk focuses on what matters: tickets, roles, notifications, and clean UX. No bloated features you'll never use. Plus, you own your data and can customize everything.",
     es: "Open Helpdesk se enfoca en lo que importa: tickets, roles, notificaciones y UX limpia. Sin funciones infladas que nunca usarás. Además, eres dueño de tus datos y puedes personalizar todo.",
   },
-  "faq.q4": { en: "What's included in the free plan?", es: "Qué incluye el plan gratuito?" },
+  "faq.q4": {
+    en: "What's included in the free plan?",
+    es: "Qué incluye el plan gratuito?",
+  },
   "faq.a4": {
     en: "Up to 3 agents, 1 workspace, full ticket management, email notifications, dark mode, i18n support, and community support. No feature gating on the essentials.",
     es: "Hasta 3 agentes, 1 workspace, gestión completa de tickets, notificaciones por email, modo oscuro, soporte i18n y soporte comunitario. Sin limitaciones en lo esencial.",
   },
-  "faq.q5": { en: "Can I upgrade or downgrade anytime?", es: "Puedo actualizar o bajar de plan en cualquier momento?" },
+  "faq.q5": {
+    en: "Can I upgrade or downgrade anytime?",
+    es: "Puedo actualizar o bajar de plan en cualquier momento?",
+  },
   "faq.a5": {
     en: "Yes. Change plans at any time. When downgrading, your current billing period continues until it expires. No lock-in, no penalties.",
     es: "Sí. Cambia de plan en cualquier momento. Al bajar de plan, tu período de facturación actual continúa hasta que expire. Sin permanencia, sin penalizaciones.",
@@ -191,7 +248,10 @@ const translations = {
   },
 
   // CTA Footer
-  "cta.heading": { en: "Ready to simplify your support?", es: "Listo para simplificar tu soporte?" },
+  "cta.heading": {
+    en: "Ready to simplify your support?",
+    es: "Listo para simplificar tu soporte?",
+  },
   "cta.subheading": {
     en: "Join teams who chose clarity over complexity.",
     es: "Únete a equipos que eligieron claridad sobre complejidad.",
@@ -216,31 +276,46 @@ const translations = {
   "footer.privacy": { en: "Privacy", es: "Privacidad" },
   "footer.terms": { en: "Terms", es: "Términos" },
   "footer.license": { en: "License", es: "Licencia" },
-  "footer.rights": { en: "All rights reserved.", es: "Todos los derechos reservados." },
+  "footer.rights": {
+    en: "All rights reserved.",
+    es: "Todos los derechos reservados.",
+  },
 
   // Misc
-  "popular": { en: "Popular", es: "Popular" },
-  "mostPopular": { en: "Most Popular", es: "Más Popular" },
-  "custom": { en: "Custom", es: "A medida" },
+  popular: { en: "Popular", es: "Popular" },
+  mostPopular: { en: "Most Popular", es: "Más Popular" },
+  custom: { en: "—", es: "—" },
 
   // Privacy Policy
   "privacy.title": { en: "Privacy Policy", es: "Política de Privacidad" },
-  "privacy.lastUpdated": { en: "Last updated: April 2026", es: "Última actualización: Abril 2026" },
-  "privacy.intro": {
-    en: "Open Helpdesk (\"we\", \"us\", \"our\") operates the openhelpdesk.dev website and the Open Helpdesk cloud platform. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our service.",
-    es: "Open Helpdesk (\"nosotros\") opera el sitio web openhelpdesk.dev y la plataforma cloud Open Helpdesk. Esta página le informa sobre nuestras políticas con respecto a la recopilación, uso y divulgación de datos personales cuando utiliza nuestro servicio.",
+  "privacy.lastUpdated": {
+    en: "Last updated: April 2026",
+    es: "Última actualización: Abril 2026",
   },
-  "privacy.collect.title": { en: "Information We Collect", es: "Información que Recopilamos" },
+  "privacy.intro": {
+    en: 'Open Helpdesk ("we", "us", "our") operates the openhelpdesk.dev website and the Open Helpdesk cloud platform. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our service.',
+    es: 'Open Helpdesk ("nosotros") opera el sitio web openhelpdesk.dev y la plataforma cloud Open Helpdesk. Esta página le informa sobre nuestras políticas con respecto a la recopilación, uso y divulgación de datos personales cuando utiliza nuestro servicio.',
+  },
+  "privacy.collect.title": {
+    en: "Information We Collect",
+    es: "Información que Recopilamos",
+  },
   "privacy.collect.desc": {
     en: "When you create an account, we collect your name, email address, and password (stored hashed). When you use the platform, we collect ticket data, comments, attachments, and usage metadata necessary to provide the service.",
     es: "Cuando crea una cuenta, recopilamos su nombre, dirección de email y contraseña (almacenada hasheada). Cuando usa la plataforma, recopilamos datos de tickets, comentarios, adjuntos y metadatos de uso necesarios para proveer el servicio.",
   },
-  "privacy.use.title": { en: "How We Use Your Data", es: "Cómo Usamos sus Datos" },
+  "privacy.use.title": {
+    en: "How We Use Your Data",
+    es: "Cómo Usamos sus Datos",
+  },
   "privacy.use.desc": {
     en: "We use your data solely to provide and improve the Open Helpdesk service. We do not sell, rent, or share your personal data with third parties for marketing purposes. Data is used for: account management, service delivery, email notifications you opted into, and aggregate analytics.",
     es: "Usamos sus datos únicamente para proveer y mejorar el servicio Open Helpdesk. No vendemos, alquilamos ni compartimos sus datos personales con terceros para fines de marketing. Los datos se usan para: gestión de cuenta, prestación del servicio, notificaciones por email que aceptó, y analíticas agregadas.",
   },
-  "privacy.storage.title": { en: "Data Storage & Security", es: "Almacenamiento y Seguridad" },
+  "privacy.storage.title": {
+    en: "Data Storage & Security",
+    es: "Almacenamiento y Seguridad",
+  },
   "privacy.storage.desc": {
     en: "Your data is stored on secure servers with encryption at rest and in transit. We use industry-standard security practices including role-based access control, regular backups, and security audits. Self-hosted users maintain full control over their own data.",
     es: "Sus datos se almacenan en servidores seguros con encriptación en reposo y en tránsito. Usamos prácticas de seguridad estándar de la industria incluyendo control de acceso basado en roles, respaldos regulares y auditorías de seguridad. Los usuarios self-hosted mantienen control total sobre sus propios datos.",
@@ -263,7 +338,10 @@ const translations = {
 
   // Terms of Service
   "terms.title": { en: "Terms of Service", es: "Términos de Servicio" },
-  "terms.lastUpdated": { en: "Last updated: April 2026", es: "Última actualización: Abril 2026" },
+  "terms.lastUpdated": {
+    en: "Last updated: April 2026",
+    es: "Última actualización: Abril 2026",
+  },
   "terms.intro": {
     en: "These Terms of Service govern your use of the Open Helpdesk platform and website operated by Open Helpdesk. By accessing or using our service, you agree to be bound by these terms.",
     es: "Estos Términos de Servicio rigen el uso de la plataforma y sitio web Open Helpdesk operado por Open Helpdesk. Al acceder o usar nuestro servicio, acepta estar sujeto a estos términos.",
@@ -293,12 +371,18 @@ const translations = {
     en: "You agree not to use the service for any unlawful purpose, to abuse or harass others, to transmit malware, or to attempt to gain unauthorized access to other systems. We reserve the right to terminate accounts that violate these terms.",
     es: "Acepta no usar el servicio para fines ilegales, abusar o acosar a otros, transmitir malware, o intentar obtener acceso no autorizado a otros sistemas. Nos reservamos el derecho de terminar cuentas que violen estos términos.",
   },
-  "terms.liability.title": { en: "Limitation of Liability", es: "Limitación de Responsabilidad" },
-  "terms.liability.desc": {
-    en: "The service is provided \"as is\" without warranties of any kind. To the maximum extent permitted by law, Open Helpdesk shall not be liable for any indirect, incidental, or consequential damages arising from the use of the service.",
-    es: "El servicio se proporciona \"tal cual\" sin garantías de ningún tipo. En la máxima medida permitida por la ley, Open Helpdesk no será responsable por daños indirectos, incidentales o consecuentes derivados del uso del servicio.",
+  "terms.liability.title": {
+    en: "Limitation of Liability",
+    es: "Limitación de Responsabilidad",
   },
-  "terms.changes.title": { en: "Changes to Terms", es: "Cambios a los Términos" },
+  "terms.liability.desc": {
+    en: 'The service is provided "as is" without warranties of any kind. To the maximum extent permitted by law, Open Helpdesk shall not be liable for any indirect, incidental, or consequential damages arising from the use of the service.',
+    es: 'El servicio se proporciona "tal cual" sin garantías de ningún tipo. En la máxima medida permitida por la ley, Open Helpdesk no será responsable por daños indirectos, incidentales o consecuentes derivados del uso del servicio.',
+  },
+  "terms.changes.title": {
+    en: "Changes to Terms",
+    es: "Cambios a los Términos",
+  },
   "terms.changes.desc": {
     en: "We may update these terms from time to time. We will notify registered users of significant changes via email. Continued use of the service after changes constitutes acceptance of the new terms.",
     es: "Podemos actualizar estos términos periódicamente. Notificaremos a usuarios registrados sobre cambios significativos por email. El uso continuado del servicio después de los cambios constituye la aceptación de los nuevos términos.",
