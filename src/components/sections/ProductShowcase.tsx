@@ -61,22 +61,11 @@ export default function ProductShowcase() {
               </div>
             </div>
           </div>
-          {/* Placeholder */}
-          <div
-            className={clsx(
-              "aspect-[16/9] flex items-center justify-center transition-colors duration-500",
-              theme === "light"
-                ? "bg-gradient-to-br from-white to-primary-50"
-                : "bg-gradient-to-br from-gray-900 to-gray-800",
-            )}
-          >
-            <div className="flex flex-col items-center gap-3 opacity-40">
-              <img src="/logo.svg" alt={CONFIG.PRODUCT_NAME} className="w-12 h-12" />
-              <span className={clsx("text-sm font-body-medium", theme === "light" ? "text-gray-400" : "text-gray-500")}>
-                Screenshot placeholder
-              </span>
-            </div>
-          </div>
+          <img
+            src={theme === "light" ? "/screenshots/showcase-light.png" : "/screenshots/showcase-dark.png"}
+            alt={CONFIG.PRODUCT_NAME}
+            className="w-full"
+          />
         </div>
       </Container>
     </section>

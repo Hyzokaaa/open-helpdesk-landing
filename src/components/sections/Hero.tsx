@@ -49,10 +49,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            {/* Placeholder content */}
-            <div className="aspect-[4/3] bg-gradient-to-br from-primary-50 to-primary-100 flex items-center justify-center">
-              <img src="/logo.svg" alt={CONFIG.PRODUCT_NAME} className="w-16 h-16 opacity-40" />
-            </div>
+            <img src="/screenshots/hero.png" alt={CONFIG.PRODUCT_NAME} className="w-full" />
           </div>
           {/* Glow */}
           <div className="absolute -inset-4 bg-primary/5 rounded-3xl blur-2xl -z-10" />
