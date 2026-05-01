@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import Button from "./Button";
 import Badge from "./Badge";
-import { CONFIG } from "../../config";
 
 interface Props {
   name: string;
@@ -10,6 +9,8 @@ interface Props {
   period: string;
   features: string[];
   cta: string;
+  href?: string;
+  disabled?: boolean;
   highlighted?: boolean;
   badge?: string;
 }
@@ -21,6 +22,8 @@ export default function PricingCard({
   period,
   features,
   cta,
+  href,
+  disabled,
   highlighted,
   badge,
 }: Props) {
@@ -60,7 +63,12 @@ export default function PricingCard({
         ))}
       </ul>
 
-      <Button href={CONFIG.APP_URL} variant={highlighted ? "primary" : "outline"} size="base" className="w-full">
+      <Button
+        href={disabled ? undefined : href}
+        variant={highlighted ? "primary" : "outline"}
+        size="base"
+        className={clsx("w-full", disabled && "opacity-50 cursor-not-allowed pointer-events-none")}
+      >
         {cta}
       </Button>
     </div>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import clsx from "clsx";
 import useTranslation from "../../i18n/useTranslation";
+import { CONFIG } from "../../config";
 import Container from "../ui/Container";
 import SectionHeading from "../ui/SectionHeading";
 import Toggle from "../ui/Toggle";
@@ -17,6 +18,7 @@ export default function Pricing() {
       description: t("pricing.free.desc"),
       monthly: 0,
       cta: t("pricing.free.cta"),
+      href: CONFIG.APP_URL,
       features: [t("pricing.free.f1"), t("pricing.free.f2"), t("pricing.free.f3"), t("pricing.free.f4")],
     },
     {
@@ -24,6 +26,7 @@ export default function Pricing() {
       description: t("pricing.starter.desc"),
       monthly: 9,
       cta: t("pricing.starter.cta"),
+      disabled: true,
       features: [t("pricing.starter.f1"), t("pricing.starter.f2"), t("pricing.starter.f3"), t("pricing.starter.f4")],
     },
     {
@@ -32,6 +35,7 @@ export default function Pricing() {
       monthly: 29,
       cta: t("pricing.business.cta"),
       highlighted: true,
+      disabled: true,
       badge: t("mostPopular"),
       features: [t("pricing.business.f1"), t("pricing.business.f2"), t("pricing.business.f3"), t("pricing.business.f4")],
     },
@@ -40,6 +44,7 @@ export default function Pricing() {
       description: t("pricing.scale.desc"),
       monthly: 79,
       cta: t("pricing.scale.cta"),
+      disabled: true,
       features: [t("pricing.scale.f1"), t("pricing.scale.f2"), t("pricing.scale.f3"), t("pricing.scale.f4")],
     },
     {
@@ -47,6 +52,7 @@ export default function Pricing() {
       description: t("pricing.enterprise.desc"),
       monthly: -1,
       cta: t("pricing.enterprise.cta"),
+      href: `mailto:${CONFIG.CONTACT_EMAIL}`,
       features: [t("pricing.enterprise.f1"), t("pricing.enterprise.f2"), t("pricing.enterprise.f3"), t("pricing.enterprise.f4"), t("pricing.enterprise.f5")],
     },
   ];
@@ -92,6 +98,8 @@ export default function Pricing() {
               period={formatPeriod(tier.monthly)}
               features={tier.features}
               cta={tier.cta}
+              href={tier.href}
+              disabled={tier.disabled}
               highlighted={tier.highlighted}
               badge={tier.badge}
             />
