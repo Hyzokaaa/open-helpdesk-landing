@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useTranslation from "../../i18n/useTranslation";
 import { CONFIG } from "../../config";
 import Container from "../ui/Container";
@@ -10,6 +10,11 @@ export default function ProductShowcase() {
   const { t } = useTranslation();
   const [theme, setTheme] = useState<"light" | "dark">("light");
   const { ref, inView } = useInView();
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = "/screenshots/showcase-dark.png";
+  }, []);
 
   return (
     <section className="py-24 relative overflow-hidden bg-primary-50">
