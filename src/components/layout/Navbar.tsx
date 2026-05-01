@@ -76,6 +76,12 @@ export default function Navbar() {
           >
             {lang === "en" ? "ES" : "EN"}
           </button>
+          <a
+            href={CONFIG.APP_URL.replace('/signup', '/login')}
+            className="text-sm font-body-medium text-secondary-text hover:text-primary transition-colors"
+          >
+            {t("nav.signIn")}
+          </a>
           <Button href={CONFIG.APP_URL} size="sm">
             {t("nav.getStarted")}
           </Button>
@@ -113,6 +119,12 @@ export default function Navbar() {
             <button onClick={toggleLang} className="text-xs font-body-semibold text-muted hover:text-primary cursor-pointer">
               {lang === "en" ? "ES" : "EN"}
             </button>
+            <a
+              href={CONFIG.APP_URL.replace('/signup', '/login')}
+              className="text-sm font-body-medium text-secondary-text hover:text-primary transition-colors"
+            >
+              {t("nav.signIn")}
+            </a>
             <Button href={CONFIG.APP_URL} size="sm">
               {t("nav.getStarted")}
             </Button>

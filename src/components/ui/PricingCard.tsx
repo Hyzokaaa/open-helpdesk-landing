@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import Button from "./Button";
 import Badge from "./Badge";
+import { CONFIG } from "../../config";
 
 interface Props {
   name: string;
@@ -59,7 +60,7 @@ export default function PricingCard({
         ))}
       </ul>
 
-      <Button variant={highlighted ? "primary" : "outline"} size="base" className="w-full">
+      <Button href={CONFIG.APP_URL} variant={highlighted ? "primary" : "outline"} size="base" className="w-full">
         {cta}
       </Button>
     </div>

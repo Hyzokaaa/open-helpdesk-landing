@@ -5,6 +5,7 @@ const translations = {
   "nav.openSource": { en: "Open Source", es: "Código Abierto" },
   "nav.faq": { en: "FAQ", es: "Preguntas Frecuentes" },
   "nav.getStarted": { en: "Get Started", es: "Comenzar" },
+  "nav.signIn": { en: "Sign In", es: "Iniciar Sesión" },
 
   // Hero
   "hero.headline": {
