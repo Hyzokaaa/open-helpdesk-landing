@@ -140,6 +140,7 @@ const translations = {
   "pricing.business.f2": { en: "10 workspaces", es: "10 workspaces" },
   "pricing.business.f3": { en: "Unlimited tickets", es: "Tickets ilimitados" },
   "pricing.business.f4": { en: "Priority support", es: "Soporte prioritario" },
+  "pricing.business.f5": { en: "Audit log", es: "Registro de auditoría" },
 
   "pricing.scale.name": { en: "Scale", es: "Scale" },
   "pricing.scale.desc": {

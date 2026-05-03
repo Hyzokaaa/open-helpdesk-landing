@@ -37,7 +37,7 @@ export default function Pricing() {
       highlighted: true,
       disabled: true,
       badge: t("mostPopular"),
-      features: [t("pricing.business.f1"), t("pricing.business.f2"), t("pricing.business.f3"), t("pricing.business.f4")],
+      features: [t("pricing.business.f1"), t("pricing.business.f2"), t("pricing.business.f3"), t("pricing.business.f4"), t("pricing.business.f5")],
     },
     {
       name: t("pricing.scale.name"),
