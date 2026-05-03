@@ -30,8 +30,8 @@ const translations = {
 
   // Features
   "features.heading": {
-    en: "Everything you need. Nothing you don't.",
-    es: "Todo lo que necesitas. Nada que no.",
+    en: "Everything you need.",
+    es: "Todo lo que necesitas.",
   },
   "features.subheading": {
     en: "Built for modern support teams who value simplicity and power.",
@@ -44,8 +44,8 @@ const translations = {
   },
   "features.roles.title": { en: "Roles & Permissions", es: "Roles y Permisos" },
   "features.roles.desc": {
-    en: "Fine-grained access control. Define exactly who can do what in each workspace.",
-    es: "Control de acceso granular. Define exactamente quién puede hacer qué en cada workspace.",
+    en: "Three built-in roles — Admin, Agent, and Reporter — with clearly defined permissions for each workspace.",
+    es: "Tres roles integrados — Admin, Agente y Reportero — con permisos claramente definidos para cada workspace.",
   },
   "features.mentions.title": { en: "@Mentions", es: "@Menciones" },
   "features.mentions.desc": {
@@ -165,9 +165,18 @@ const translations = {
     en: "Everything in Scale",
     es: "Todo lo de Scale",
   },
-  "pricing.enterprise.f2": { en: "SSO / SAML", es: "SSO / SAML" },
-  "pricing.enterprise.f3": { en: "Audit logs", es: "Registros de auditoría" },
-  "pricing.enterprise.f4": { en: "Custom roles", es: "Roles personalizados" },
+  "pricing.enterprise.f2": {
+    en: "Dedicated account manager",
+    es: "Gestor de cuenta dedicado",
+  },
+  "pricing.enterprise.f3": {
+    en: "Custom integrations",
+    es: "Integraciones personalizadas",
+  },
+  "pricing.enterprise.f4": {
+    en: "Priority onboarding",
+    es: "Onboarding prioritario",
+  },
   "pricing.enterprise.f5": { en: "SLA guarantees", es: "Garantías de SLA" },
 
   // Open Source
@@ -231,8 +240,8 @@ const translations = {
     es: "Qué incluye el plan gratuito?",
   },
   "faq.a4": {
-    en: "Up to 3 agents, 1 workspace, full ticket management, email notifications, dark mode, i18n support, and community support. No feature gating on the essentials.",
-    es: "Hasta 3 agentes, 1 workspace, gestión completa de tickets, notificaciones por email, modo oscuro, soporte i18n y soporte comunitario. Sin limitaciones en lo esencial.",
+    en: "Up to 2 agents, 1 workspace, full ticket management, email notifications, dark mode, i18n support, and community support. No feature gating on the essentials.",
+    es: "Hasta 2 agentes, 1 workspace, gestión completa de tickets, notificaciones por email, modo oscuro, soporte i18n y soporte comunitario. Sin limitaciones en lo esencial.",
   },
   "faq.q5": {
     en: "Can I upgrade or downgrade anytime?",
@@ -244,8 +253,8 @@ const translations = {
   },
   "faq.q6": { en: "Is my data secure?", es: "Mis datos están seguros?" },
   "faq.a6": {
-    en: "Security is a top priority. We use encryption at rest and in transit, role-based access control, and regular security audits. Self-hosted users have full control over their data.",
-    es: "La seguridad es prioridad. Usamos encriptación en reposo y en tránsito, control de acceso basado en roles y auditorías de seguridad regulares. Los usuarios self-hosted tienen control total sobre sus datos.",
+    en: "Security is a top priority. We use encryption in transit (TLS), role-based access control, and follow security best practices. Self-hosted users have full control over their data.",
+    es: "La seguridad es prioridad. Usamos encriptación en tránsito (TLS), control de acceso basado en roles y seguimos las mejores prácticas de seguridad. Los usuarios self-hosted tienen control total sobre sus datos.",
   },
 
   // CTA Footer
@@ -318,8 +327,8 @@ const translations = {
     es: "Almacenamiento y Seguridad",
   },
   "privacy.storage.desc": {
-    en: "Your data is stored on secure servers with encryption at rest and in transit. We use industry-standard security practices including role-based access control, regular backups, and security audits. Self-hosted users maintain full control over their own data.",
-    es: "Sus datos se almacenan en servidores seguros con encriptación en reposo y en tránsito. Usamos prácticas de seguridad estándar de la industria incluyendo control de acceso basado en roles, respaldos regulares y auditorías de seguridad. Los usuarios self-hosted mantienen control total sobre sus propios datos.",
+    en: "Your data is stored on secure servers with encryption in transit (TLS). We use industry-standard security practices including role-based access control and regular backups. Self-hosted users maintain full control over their own data.",
+    es: "Sus datos se almacenan en servidores seguros con encriptación en tránsito (TLS). Usamos prácticas de seguridad estándar de la industria incluyendo control de acceso basado en roles y respaldos regulares. Los usuarios self-hosted mantienen control total sobre sus propios datos.",
   },
   "privacy.rights.title": { en: "Your Rights", es: "Sus Derechos" },
   "privacy.rights.desc": {
