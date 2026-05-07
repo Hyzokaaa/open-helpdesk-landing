@@ -26,7 +26,7 @@ export default function Pricing() {
       description: t("pricing.starter.desc"),
       monthly: 15,
       cta: t("pricing.starter.cta"),
-      disabled: true,
+      href: CONFIG.APP_URL + "?plan=starter",
       features: [t("pricing.starter.f1"), t("pricing.starter.f2"), t("pricing.starter.f3"), t("pricing.starter.f4")],
     },
     {
@@ -34,8 +34,8 @@ export default function Pricing() {
       description: t("pricing.business.desc"),
       monthly: 39,
       cta: t("pricing.business.cta"),
+      href: CONFIG.APP_URL + "?plan=business",
       highlighted: true,
-      disabled: true,
       badge: t("mostPopular"),
       features: [t("pricing.business.f1"), t("pricing.business.f2"), t("pricing.business.f3"), t("pricing.business.f4"), t("pricing.business.f5")],
     },
@@ -44,7 +44,7 @@ export default function Pricing() {
       description: t("pricing.scale.desc"),
       monthly: 79,
       cta: t("pricing.scale.cta"),
-      disabled: true,
+      href: CONFIG.APP_URL + "?plan=scale",
       features: [t("pricing.scale.f1"), t("pricing.scale.f2"), t("pricing.scale.f3"), t("pricing.scale.f4")],
     },
     {
