@@ -24,7 +24,7 @@ export default function Pricing() {
     {
       name: t("pricing.starter.name"),
       description: t("pricing.starter.desc"),
-      monthly: 9,
+      monthly: 15,
       cta: t("pricing.starter.cta"),
       disabled: true,
       features: [t("pricing.starter.f1"), t("pricing.starter.f2"), t("pricing.starter.f3"), t("pricing.starter.f4")],
@@ -32,7 +32,7 @@ export default function Pricing() {
     {
       name: t("pricing.business.name"),
       description: t("pricing.business.desc"),
-      monthly: 29,
+      monthly: 39,
       cta: t("pricing.business.cta"),
       highlighted: true,
       disabled: true,
