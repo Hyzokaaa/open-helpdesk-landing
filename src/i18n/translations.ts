@@ -116,9 +116,9 @@ const translations = {
   "pricing.free.cta": { en: "Get Started", es: "Comenzar" },
   "pricing.free.f1": { en: "Up to 2 agents", es: "Hasta 2 agentes" },
   "pricing.free.f2": { en: "1 workspace", es: "1 workspace" },
-  "pricing.free.f3": { en: "All features included", es: "Todas las funcionalidades" },
-  "pricing.free.f4": { en: "Reports, CSAT & canned responses", es: "Reportes, CSAT y respuestas predefinidas" },
-  "pricing.free.f5": { en: "Community support", es: "Soporte comunitario" },
+  "pricing.free.f3": { en: "Unlimited tickets", es: "Tickets ilimitados" },
+  "pricing.free.f4": { en: "Reports & canned responses", es: "Reportes y respuestas predefinidas" },
+  "pricing.free.f5": { en: "Custom fields & tags", es: "Campos personalizados y etiquetas" },
 
   "pricing.starter.name": { en: "Starter", es: "Starter" },
   "pricing.starter.desc": {
@@ -126,10 +126,11 @@ const translations = {
     es: "Para equipos que inician",
   },
   "pricing.starter.cta": { en: "Get Started", es: "Comenzar" },
-  "pricing.starter.f1": { en: "Up to 5 agents", es: "Hasta 5 agentes" },
-  "pricing.starter.f2": { en: "3 workspaces", es: "3 workspaces" },
-  "pricing.starter.f3": { en: "Custom color palette", es: "Paleta de colores personalizada" },
-  "pricing.starter.f4": { en: "Email support", es: "Soporte por email" },
+  "pricing.starter.f1": { en: "Everything in Free", es: "Todo lo de Free" },
+  "pricing.starter.f2": { en: "Up to 5 agents", es: "Hasta 5 agentes" },
+  "pricing.starter.f3": { en: "3 workspaces", es: "3 workspaces" },
+  "pricing.starter.f4": { en: "CSAT surveys", es: "Encuestas de satisfacción" },
+  "pricing.starter.f5": { en: "Custom color palette", es: "Paleta de colores personalizada" },
 
   "pricing.business.name": { en: "Business", es: "Negocio" },
   "pricing.business.desc": {
@@ -137,21 +138,10 @@ const translations = {
     es: "Para equipos en crecimiento",
   },
   "pricing.business.cta": { en: "Get Started", es: "Comenzar" },
-  "pricing.business.f1": { en: "Up to 15 agents", es: "Hasta 15 agentes" },
-  "pricing.business.f2": { en: "10 workspaces", es: "10 workspaces" },
-  "pricing.business.f3": { en: "Audit log", es: "Registro de auditoría" },
-  "pricing.business.f4": { en: "Priority support", es: "Soporte prioritario" },
-
-  "pricing.scale.name": { en: "Scale", es: "Scale" },
-  "pricing.scale.desc": {
-    en: "For scaling organizations",
-    es: "Para grandes organizaciones",
-  },
-  "pricing.scale.cta": { en: "Get Started", es: "Comenzar" },
-  "pricing.scale.f1": { en: "Up to 50 agents", es: "Hasta 50 agentes" },
-  "pricing.scale.f2": { en: "Unlimited workspaces", es: "Workspaces ilimitados" },
-  "pricing.scale.f3": { en: "Everything in Business", es: "Todo lo de Negocio" },
-  "pricing.scale.f4": { en: "Dedicated support", es: "Soporte dedicado" },
+  "pricing.business.f1": { en: "Everything in Starter", es: "Todo lo de Starter" },
+  "pricing.business.f2": { en: "Up to 20 agents", es: "Hasta 20 agentes" },
+  "pricing.business.f3": { en: "10 workspaces", es: "10 workspaces" },
+  "pricing.business.f4": { en: "Audit log", es: "Registro de auditoría" },
 
   "pricing.enterprise.name": { en: "Enterprise", es: "Empresarial" },
   "pricing.enterprise.desc": {
@@ -159,23 +149,10 @@ const translations = {
     es: "Para grandes empresas",
   },
   "pricing.enterprise.cta": { en: "Contact Us", es: "Contáctanos" },
-  "pricing.enterprise.f1": {
-    en: "Everything in Scale",
-    es: "Todo lo de Scale",
-  },
-  "pricing.enterprise.f2": {
-    en: "Dedicated account manager",
-    es: "Gestor de cuenta dedicado",
-  },
-  "pricing.enterprise.f3": {
-    en: "Custom integrations",
-    es: "Integraciones personalizadas",
-  },
-  "pricing.enterprise.f4": {
-    en: "Priority onboarding",
-    es: "Onboarding prioritario",
-  },
-  "pricing.enterprise.f5": { en: "SLA guarantees", es: "Garantías de SLA" },
+  "pricing.enterprise.f1": { en: "Everything in Business", es: "Todo lo de Negocio" },
+  "pricing.enterprise.f2": { en: "Custom agent & workspace limits", es: "Límites personalizados de agentes y workspaces" },
+  "pricing.enterprise.f3": { en: "Dedicated setup assistance", es: "Asistencia dedicada de configuración" },
+  "pricing.enterprise.f4": { en: "Volume pricing", es: "Precios por volumen" },
 
   // Open Source
   "oss.heading": { en: "Open Source at heart", es: "Open Source de corazón" },

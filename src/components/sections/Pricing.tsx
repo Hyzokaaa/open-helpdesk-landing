@@ -27,7 +27,7 @@ export default function Pricing() {
       monthly: 15,
       cta: t("pricing.starter.cta"),
       href: CONFIG.APP_URL + "?plan=starter",
-      features: [t("pricing.starter.f1"), t("pricing.starter.f2"), t("pricing.starter.f3"), t("pricing.starter.f4")],
+      features: [t("pricing.starter.f1"), t("pricing.starter.f2"), t("pricing.starter.f3"), t("pricing.starter.f4"), t("pricing.starter.f5")],
     },
     {
       name: t("pricing.business.name"),
@@ -40,20 +40,12 @@ export default function Pricing() {
       features: [t("pricing.business.f1"), t("pricing.business.f2"), t("pricing.business.f3"), t("pricing.business.f4")],
     },
     {
-      name: t("pricing.scale.name"),
-      description: t("pricing.scale.desc"),
-      monthly: 79,
-      cta: t("pricing.scale.cta"),
-      href: CONFIG.APP_URL + "?plan=scale",
-      features: [t("pricing.scale.f1"), t("pricing.scale.f2"), t("pricing.scale.f3"), t("pricing.scale.f4")],
-    },
-    {
       name: t("pricing.enterprise.name"),
       description: t("pricing.enterprise.desc"),
       monthly: -1,
       cta: t("pricing.enterprise.cta"),
       href: `mailto:${CONFIG.CONTACT_EMAIL}`,
-      features: [t("pricing.enterprise.f1"), t("pricing.enterprise.f2"), t("pricing.enterprise.f3"), t("pricing.enterprise.f4"), t("pricing.enterprise.f5")],
+      features: [t("pricing.enterprise.f1"), t("pricing.enterprise.f2"), t("pricing.enterprise.f3"), t("pricing.enterprise.f4")],
     },
   ];
 
@@ -88,7 +80,7 @@ export default function Pricing() {
           </span>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {tiers.map((tier) => (
             <PricingCard
               key={tier.name}
