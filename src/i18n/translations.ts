@@ -42,36 +42,35 @@ const translations = {
     en: "Create, assign, and track support tickets with priorities, statuses, and categories.",
     es: "Crea, asigna y da seguimiento a tickets con prioridades, estados y categorías.",
   },
+  "features.reports.title": { en: "Reports & Analytics", es: "Reportes y Analíticas" },
+  "features.reports.desc": {
+    en: "Visual dashboard with resolution times, agent performance, and trend charts.",
+    es: "Dashboard visual con tiempos de resolución, rendimiento de agentes y tendencias.",
+  },
+  "features.csat.title": { en: "CSAT Surveys", es: "Encuestas de Satisfacción" },
+  "features.csat.desc": {
+    en: "Automatic satisfaction surveys after resolution — one-click rating, no login required.",
+    es: "Encuestas automáticas de satisfacción al resolver — calificación con un click, sin login.",
+  },
+  "features.canned.title": { en: "Canned Responses", es: "Respuestas Predefinidas" },
+  "features.canned.desc": {
+    en: "Reusable reply templates your team inserts with \"/\" while writing comments.",
+    es: "Plantillas de respuesta reutilizables que tu equipo inserta con \"/\" al escribir.",
+  },
+  "features.customFields.title": { en: "Custom Fields", es: "Campos Personalizados" },
+  "features.customFields.desc": {
+    en: "Add your own fields to tickets — text, dropdowns, dates, checkboxes, and more.",
+    es: "Agrega tus propios campos a tickets — texto, selección, fechas, casillas y más.",
+  },
   "features.roles.title": { en: "Roles & Permissions", es: "Roles y Permisos" },
   "features.roles.desc": {
-    en: "Three built-in roles — Admin, Agent, and Reporter — with clearly defined permissions for each workspace.",
-    es: "Tres roles integrados — Admin, Agente y Reportero — con permisos claramente definidos para cada workspace.",
+    en: "Three built-in roles — Admin, Agent, and Reporter — with granular permissions per workspace.",
+    es: "Tres roles integrados — Admin, Agente y Reportero — con permisos granulares por workspace.",
   },
-  "features.mentions.title": { en: "@Mentions", es: "@Menciones" },
-  "features.mentions.desc": {
-    en: "Tag teammates in comments to keep conversations focused and people in the loop.",
-    es: "Etiqueta compañeros en comentarios para mantener las conversaciones enfocadas.",
-  },
-  "features.email.title": {
-    en: "Email Notifications",
-    es: "Notificaciones por Email",
-  },
+  "features.email.title": { en: "Email Notifications", es: "Notificaciones por Email" },
   "features.email.desc": {
-    en: "Automatic email alerts for assignments, mentions, and status changes.",
-    es: "Alertas automáticas por email para asignaciones, menciones y cambios de estado.",
-  },
-  "features.i18n.title": {
-    en: "Internationalization",
-    es: "Internacionalización",
-  },
-  "features.i18n.desc": {
-    en: "Full English and Spanish support out of the box. Add more languages easily.",
-    es: "Soporte completo en inglés y español incluido. Agrega más idiomas fácilmente.",
-  },
-  "features.darkMode.title": { en: "Dark Mode", es: "Modo Oscuro" },
-  "features.darkMode.desc": {
-    en: "Four beautiful themes including light, dark, and deep dark variants.",
-    es: "Cuatro hermosos temas incluyendo claro, oscuro y variantes deep dark.",
+    en: "Automatic alerts for assignments, mentions, status changes, and CSAT surveys.",
+    es: "Alertas automáticas para asignaciones, menciones, cambios de estado y encuestas CSAT.",
   },
   "features.attachments.title": { en: "Attachments", es: "Archivos Adjuntos" },
   "features.attachments.desc": {

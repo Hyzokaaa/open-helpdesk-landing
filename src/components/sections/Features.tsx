@@ -4,11 +4,12 @@ import SectionHeading from "../ui/SectionHeading";
 import FeatureCard from "../ui/FeatureCard";
 import {
   TicketIcon,
+  ReportsIcon,
+  CsatIcon,
+  CannedIcon,
+  CustomFieldsIcon,
   RolesIcon,
-  MentionsIcon,
   EmailIcon,
-  I18nIcon,
-  DarkModeIcon,
   AttachmentsIcon,
   TagsIcon,
 } from "../icons/FeatureIcons";
@@ -18,11 +19,12 @@ export default function Features() {
 
   const features = [
     { icon: <TicketIcon />, title: t("features.tickets.title"), desc: t("features.tickets.desc") },
+    { icon: <ReportsIcon />, title: t("features.reports.title"), desc: t("features.reports.desc") },
+    { icon: <CsatIcon />, title: t("features.csat.title"), desc: t("features.csat.desc") },
+    { icon: <CannedIcon />, title: t("features.canned.title"), desc: t("features.canned.desc") },
+    { icon: <CustomFieldsIcon />, title: t("features.customFields.title"), desc: t("features.customFields.desc") },
     { icon: <RolesIcon />, title: t("features.roles.title"), desc: t("features.roles.desc") },
-    { icon: <MentionsIcon />, title: t("features.mentions.title"), desc: t("features.mentions.desc") },
     { icon: <EmailIcon />, title: t("features.email.title"), desc: t("features.email.desc") },
-    { icon: <I18nIcon />, title: t("features.i18n.title"), desc: t("features.i18n.desc") },
-    { icon: <DarkModeIcon />, title: t("features.darkMode.title"), desc: t("features.darkMode.desc") },
     { icon: <AttachmentsIcon />, title: t("features.attachments.title"), desc: t("features.attachments.desc") },
     { icon: <TagsIcon />, title: t("features.tags.title"), desc: t("features.tags.desc") },
   ];
