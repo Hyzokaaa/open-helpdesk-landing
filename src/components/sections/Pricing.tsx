@@ -19,7 +19,7 @@ export default function Pricing() {
       monthly: 0,
       cta: t("pricing.free.cta"),
       href: CONFIG.APP_URL,
-      features: [t("pricing.free.f1"), t("pricing.free.f2"), t("pricing.free.f3"), t("pricing.free.f4")],
+      features: [t("pricing.free.f1"), t("pricing.free.f2"), t("pricing.free.f3"), t("pricing.free.f4"), t("pricing.free.f5")],
     },
     {
       name: t("pricing.starter.name"),
@@ -27,7 +27,7 @@ export default function Pricing() {
       monthly: 15,
       cta: t("pricing.starter.cta"),
       href: CONFIG.APP_URL + "?plan=starter",
-      features: [t("pricing.starter.f1"), t("pricing.starter.f2"), t("pricing.starter.f3"), t("pricing.starter.f4")],
+      features: [t("pricing.starter.f1"), t("pricing.starter.f2"), t("pricing.starter.f3"), t("pricing.starter.f4"), t("pricing.starter.f5")],
     },
     {
       name: t("pricing.business.name"),

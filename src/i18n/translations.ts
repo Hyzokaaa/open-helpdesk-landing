@@ -117,7 +117,8 @@ const translations = {
   "pricing.free.f1": { en: "Up to 2 agents", es: "Hasta 2 agentes" },
   "pricing.free.f2": { en: "1 workspace", es: "1 workspace" },
   "pricing.free.f3": { en: "Unlimited tickets", es: "Tickets ilimitados" },
-  "pricing.free.f4": { en: "Community support", es: "Soporte comunitario" },
+  "pricing.free.f4": { en: "Custom fields", es: "Campos personalizados" },
+  "pricing.free.f5": { en: "Reports dashboard", es: "Panel de reportes" },
 
   "pricing.starter.name": { en: "Starter", es: "Starter" },
   "pricing.starter.desc": {
@@ -127,8 +128,9 @@ const translations = {
   "pricing.starter.cta": { en: "Get Started", es: "Comenzar" },
   "pricing.starter.f1": { en: "Up to 5 agents", es: "Hasta 5 agentes" },
   "pricing.starter.f2": { en: "3 workspaces", es: "3 workspaces" },
-  "pricing.starter.f3": { en: "Unlimited tickets", es: "Tickets ilimitados" },
-  "pricing.starter.f4": { en: "Email support", es: "Soporte por email" },
+  "pricing.starter.f3": { en: "Canned responses", es: "Respuestas predefinidas" },
+  "pricing.starter.f4": { en: "Workspace branding", es: "Marca del workspace" },
+  "pricing.starter.f5": { en: "CSAT surveys", es: "Encuestas de satisfacción" },
 
   "pricing.business.name": { en: "Business", es: "Negocio" },
   "pricing.business.desc": {
@@ -138,8 +140,8 @@ const translations = {
   "pricing.business.cta": { en: "Get Started", es: "Comenzar" },
   "pricing.business.f1": { en: "Up to 15 agents", es: "Hasta 15 agentes" },
   "pricing.business.f2": { en: "10 workspaces", es: "10 workspaces" },
-  "pricing.business.f3": { en: "Unlimited tickets", es: "Tickets ilimitados" },
-  "pricing.business.f4": { en: "Priority support", es: "Soporte prioritario" },
+  "pricing.business.f3": { en: "Everything in Starter", es: "Todo lo de Starter" },
+  "pricing.business.f4": { en: "Custom color palette", es: "Paleta de colores personalizada" },
   "pricing.business.f5": { en: "Audit log", es: "Registro de auditoría" },
 
   "pricing.scale.name": { en: "Scale", es: "Scale" },
@@ -149,11 +151,8 @@ const translations = {
   },
   "pricing.scale.cta": { en: "Get Started", es: "Comenzar" },
   "pricing.scale.f1": { en: "Up to 50 agents", es: "Hasta 50 agentes" },
-  "pricing.scale.f2": {
-    en: "Unlimited workspaces",
-    es: "Workspaces ilimitados",
-  },
-  "pricing.scale.f3": { en: "Unlimited tickets", es: "Tickets ilimitados" },
+  "pricing.scale.f2": { en: "Unlimited workspaces", es: "Workspaces ilimitados" },
+  "pricing.scale.f3": { en: "Everything in Business", es: "Todo lo de Negocio" },
   "pricing.scale.f4": { en: "Dedicated support", es: "Soporte dedicado" },
 
   "pricing.enterprise.name": { en: "Enterprise", es: "Empresarial" },
