@@ -106,6 +106,7 @@ const translations = {
   "pricing.yearlyDiscount": { en: "Save 2 months", es: "Ahorra 2 meses" },
   "pricing.perMonth": { en: "/mo", es: "/mes" },
   "pricing.perYear": { en: "/yr", es: "/año" },
+  "pricing.comingSoon": { en: "Coming Soon", es: "Próximamente" },
 
   "pricing.free.name": { en: "Free", es: "Gratis" },
   "pricing.free.desc": {
@@ -259,6 +260,7 @@ const translations = {
   "footer.legal": { en: "Legal", es: "Legal" },
   "footer.privacy": { en: "Privacy", es: "Privacidad" },
   "footer.terms": { en: "Terms", es: "Términos" },
+  "footer.refund": { en: "Refund Policy", es: "Reembolsos" },
   "footer.license": { en: "License", es: "Licencia" },
   "footer.rights": {
     en: "All rights reserved.",
@@ -375,6 +377,54 @@ const translations = {
   "terms.contact.desc": {
     en: "If you have any questions about these Terms of Service, please contact us at",
     es: "Si tiene alguna pregunta sobre estos Términos de Servicio, contáctenos en",
+  },
+
+  // Refund Policy
+  "refund.title": { en: "Refund Policy", es: "Política de Reembolso" },
+  "refund.lastUpdated": {
+    en: "Last updated: May 2026",
+    es: "Última actualización: Mayo 2026",
+  },
+  "refund.intro": {
+    en: "We want you to be satisfied with Open Helpdesk. This policy outlines the conditions under which we offer refunds for our paid subscription plans.",
+    es: "Queremos que esté satisfecho con Open Helpdesk. Esta política describe las condiciones bajo las cuales ofrecemos reembolsos para nuestros planes de suscripción de pago.",
+  },
+  "refund.eligibility.title": {
+    en: "Refund Eligibility",
+    es: "Elegibilidad para Reembolso",
+  },
+  "refund.eligibility.desc": {
+    en: "You may request a full refund within 14 days of your initial purchase or plan upgrade if the service does not meet your expectations. Refund requests after the 14-day period are evaluated on a case-by-case basis.",
+    es: "Puede solicitar un reembolso completo dentro de los 14 días posteriores a su compra inicial o mejora de plan si el servicio no cumple con sus expectativas. Las solicitudes de reembolso después del período de 14 días se evalúan caso por caso.",
+  },
+  "refund.process.title": {
+    en: "How to Request a Refund",
+    es: "Cómo Solicitar un Reembolso",
+  },
+  "refund.process.desc": {
+    en: "To request a refund, contact us at support@openhelpdesk.dev with your account email and the reason for your request. We will process eligible refunds within 5-10 business days. Refunds are returned to the original payment method.",
+    es: "Para solicitar un reembolso, contáctenos en support@openhelpdesk.dev con el email de su cuenta y el motivo de su solicitud. Procesaremos los reembolsos elegibles en un plazo de 5 a 10 días hábiles. Los reembolsos se devuelven al método de pago original.",
+  },
+  "refund.exceptions.title": {
+    en: "Non-Refundable Cases",
+    es: "Casos No Reembolsables",
+  },
+  "refund.exceptions.desc": {
+    en: "Refunds are not available for: partial months of service after the 14-day period, accounts terminated for violations of our Terms of Service, or voluntary downgrades to the Free plan (which take effect immediately with no prorated refund).",
+    es: "No se ofrecen reembolsos por: meses parciales de servicio después del período de 14 días, cuentas terminadas por violación de nuestros Términos de Servicio, o bajadas voluntarias al plan Free (que toman efecto inmediato sin reembolso prorrateado).",
+  },
+  "refund.downgrade.title": {
+    en: "Plan Changes & Cancellations",
+    es: "Cambios de Plan y Cancelaciones",
+  },
+  "refund.downgrade.desc": {
+    en: "When you cancel a paid plan, you are downgraded to the Free plan. You retain access to paid features until the end of your current billing period. No partial refunds are issued for unused time after the 14-day refund window.",
+    es: "Al cancelar un plan de pago, se le baja al plan Free. Conserva acceso a las funcionalidades de pago hasta el final de su período de facturación actual. No se emiten reembolsos parciales por tiempo no utilizado después de la ventana de reembolso de 14 días.",
+  },
+  "refund.contact.title": { en: "Contact", es: "Contacto" },
+  "refund.contact.desc": {
+    en: "If you have any questions about this Refund Policy, please contact us at",
+    es: "Si tiene alguna pregunta sobre esta Política de Reembolso, contáctenos en",
   },
 
   // Legal pages shared
