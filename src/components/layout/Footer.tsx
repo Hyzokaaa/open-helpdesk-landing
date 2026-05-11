@@ -50,6 +50,7 @@ export default function Footer() {
       links: [
         { label: t("footer.privacy"), to: "/privacy" },
         { label: t("footer.terms"), to: "/terms" },
+        { label: t("footer.refund"), to: "/refund" },
         { label: t("footer.license"), href: `${CONFIG.GITHUB_URL}/blob/main/LICENSE` },
       ],
     },
