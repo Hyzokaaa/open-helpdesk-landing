@@ -6,4 +6,5 @@ export const CONFIG = {
   DOCS_URL: "https://docs.openhelpdesk.dev",
   CONTACT_EMAIL: "hello@openhelpdesk.dev",
   GITHUB_STARS: "0",
+  DISABLE_PAID_PLANS: import.meta.env.VITE_DISABLE_PAID_PLANS === "true",
 };

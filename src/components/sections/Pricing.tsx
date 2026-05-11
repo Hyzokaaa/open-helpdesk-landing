@@ -12,6 +12,8 @@ export default function Pricing() {
   const [billing, setBilling] = useState<"left" | "right">("left");
   const yearly = billing === "right";
 
+  const disablePaid = CONFIG.DISABLE_PAID_PLANS;
+
   const tiers = [
     {
       name: t("pricing.free.name"),
@@ -25,16 +27,18 @@ export default function Pricing() {
       name: t("pricing.starter.name"),
       description: t("pricing.starter.desc"),
       monthly: 15,
-      cta: t("pricing.starter.cta"),
+      cta: disablePaid ? t("pricing.comingSoon") : t("pricing.starter.cta"),
       href: CONFIG.APP_URL + "?plan=starter",
+      disabled: disablePaid,
       features: [t("pricing.starter.f1"), t("pricing.starter.f2"), t("pricing.starter.f3"), t("pricing.starter.f4"), t("pricing.starter.f5")],
     },
     {
       name: t("pricing.business.name"),
       description: t("pricing.business.desc"),
       monthly: 39,
-      cta: t("pricing.business.cta"),
+      cta: disablePaid ? t("pricing.comingSoon") : t("pricing.business.cta"),
       href: CONFIG.APP_URL + "?plan=business",
+      disabled: disablePaid,
       highlighted: true,
       badge: t("mostPopular"),
       features: [t("pricing.business.f1"), t("pricing.business.f2"), t("pricing.business.f3"), t("pricing.business.f4")],

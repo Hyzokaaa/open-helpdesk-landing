@@ -27,6 +27,8 @@ jobs:
         env:
           VITE_UMAMI_URL: ${{ vars.VITE_UMAMI_URL }}
           VITE_UMAMI_WEBSITE_ID: ${{ vars.VITE_UMAMI_WEBSITE_ID }}
+          VITE_APP_URL: ${{ vars.VITE_APP_URL }}
+          VITE_DISABLE_PAID_PLANS: ${{ vars.VITE_DISABLE_PAID_PLANS }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
